@@ -1,0 +1,234 @@
+body {
+    font-size: 16px;
+    margin: 0px;
+    background-color: #22212C;
+    color: #A8A5D6;
+    padding: 8px;
+}
+#corpo {
+    display: grid;
+    grid-template-areas:
+    "aside main";
+    grid-template-columns: 250px 3fr;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 30px;
+    }
+
+    #corpo {
+        display: flex;
+        flex-flow: column;
+    }
+}
+
+#aside {
+    grid-area: aside;
+    height: 97.5vh;
+    margin-right: 8px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+}
+
+@media screen and (max-height: 630px) {
+    #aside {
+        row-gap: 8px
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #aside {
+        height: fit-content;
+        margin-right: 0px;
+        margin-bottom: 8px;
+
+    }
+}
+
+.cards {
+    background-color: #302F3D;
+    border-radius: 25px;
+    box-shadow: 4px 4px 0px 0px #302f3d45;
+    padding: 10px;
+}
+
+#perfil {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    width: fit-content;
+}
+
+#foto_perfil {
+    width: 75%;
+    border-radius: 50%;
+    align-self: center;
+    border: 2px solid rebeccapurple;
+}
+
+#nome_perfil {
+    margin-bottom: 8px;
+    margin-top: 15px;
+    font-weight: 700;
+}
+
+#funcao_perfil {
+    top: -10px;
+    margin-top: 0px;
+    font-weight: 400;
+}
+
+#informacoes {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 3px;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width:768px) {
+    #informacoes {
+        margin: 8px 0px;
+        padding-right: 15px;
+    }
+}
+
+#informacoes a {
+    color: #A8A5D6;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+#informacoes a img {
+    grid-area: icons;
+    margin-right: 7px;
+}
+
+#informacoes a span {
+    grid-area: escrito;
+}
+
+#card_tecnologias {
+    padding: 5px;
+}
+
+#card_tecnologias h2 {
+    margin: 10px;
+}
+
+#tecnologias {
+    display: flex;
+    flex-wrap: wrap;
+    color: #22212C;
+}
+
+#tecnologias span {
+    display: block;
+    width: fit-content;
+    margin: 10px;
+
+    background-color: #A8A5D6;
+    padding: 5px;
+    border-radius: 9px;
+}
+
+
+#conteudo {
+    grid-area: main;
+}
+
+
+#projetos {
+    padding: 10px;
+    font-weight: 600;
+    font-size: larger;
+    height: fit-content;
+    margin-bottom: 8px;
+
+}
+
+#repositorios {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+}
+
+@media screen and (max-width: 1224px) {
+    #repositorios {
+        grid-template-columns: 1fr;
+    }
+}
+
+#repositorio {
+    height: fit-content;
+    color: #A8A5D6;
+    display: grid;
+    grid-template-areas:
+    "icone nome"
+    "descricao descricao"
+    "linguagem criacao";
+    grid-template-columns: min-content;
+    grid-template-rows:  min-content min-content;
+}
+
+.repositorio_link {
+    text-decoration: none;
+}
+
+.repositorio_icon {
+    grid-area: icone;
+    height: fit-content;
+}
+
+.repositorio_nome {
+    grid-area: nome;
+    text-align: end;
+    height: fit-content;
+    margin: 5px;
+}
+
+.repositorio_descricao {
+    grid-area: descricao;
+    height: 2.4em;
+    margin: 5px;
+    text-overflow: ellipsis;
+    overflow: scroll;
+}
+
+@media screen and (max-width: 1224px) {
+    .repositorio_descricao {
+        width: 958px;
+        height: 2.4em;
+
+        text-overflow: ellipsis;
+        overflow: scroll;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .repositorio_descricao {
+        width: fit-content;
+        height: 4em;
+
+        text-overflow: ellipsis;
+        overflow: scroll;
+    }
+}
+
+.repositorio_criacao {
+    grid-area: criacao;
+    margin: 5px;
+    text-align: end;
+    height: fit-content;
+}
+
+.repositorio_linguagem {
+    grid-area: linguagem;
+    margin: 5px;
+    text-align: start;
+    height: fit-content;
+    width: max-content;
+    height: fit-content;
+}
