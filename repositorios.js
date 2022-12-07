@@ -13,7 +13,7 @@ repositorios = [
         "descricao": "Repositório de todas as aulas de desenvolvimento web da faculdade.",
         "criacao": "01/agosto/2022",
         "linguagemPrincipal":"html and css"
-        
+
     },{
         "ID": 3,
         "nome": "Jogo de pong",
@@ -32,7 +32,7 @@ repositorios = [
         "ID": 5,
         "nome": "Ficha de personagem de dongeons & dragons",
         "link": "https://github.com/Victor84286/ficha-personagem-d-d",
-        "descricao": "Repositório com a avaliação inicial da matéria de programação estruturada da faculdade. Programa para criação de personagens para D&D em que são lançados 24 dados, sendo 4 para cada atributo, descartando o menor e somando o resto. Em seguida corrige para a raca. No fim pergunta se ficou satisfeito com a ficha e se pretende salvá-la, o arquivo é salvo com o nme do personagem. Feito em python",
+        "descricao": "Repositório com a avaliação inicial da matéria de programação estruturada da faculdade. Programa para criação de personagens para D&D em que são lançados 24 dados, sendo 4 para cada atributo, descartando o menor e somando o resto. Em seguida corrige para a raca. No fim pergunta se ficou satisfeito com a ficha e se pretende salvá-la, o arquivo é salvo com o nome do personagem. Feito em python",
         "criacao": "16/novembro/2022",
         "linguagemPrincipal":"python"
     },{

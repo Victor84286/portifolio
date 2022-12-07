@@ -191,10 +191,9 @@ body {
 
 .repositorio_descricao {
     grid-area: descricao;
-    height: 2.4em;
+    height: 5.7em;
     margin: 5px;
-    text-overflow: ellipsis;
-    overflow: scroll;
+
 }
 
 @media screen and (max-width: 1224px) {
